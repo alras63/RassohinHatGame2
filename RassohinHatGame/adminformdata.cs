@@ -12,7 +12,7 @@ using System.Xml;
 using System.Xml.Linq;
 using System.Xml.Serialization;
 
-namespace AndreevaHatGame
+namespace RassohinHatGame
 {
     public partial class adminFormData : Form
     {
@@ -172,18 +172,47 @@ namespace AndreevaHatGame
                 else
                 {
                     xdoc = new XDocument(new XElement("settings"));
-                }
+                } 
 
                 var teamsElement = xdoc.Element("settings").Element("Teams");
-                teamsElement.RemoveAll();
+                if(teamsElement != null)
+                {
+                    teamsElement.RemoveAll();
+
+                } else
+                {
+                   
+                    xdoc.Root.Add(new XElement("Teams"));
+                    teamsElement = xdoc.Element("settings").Element("Teams");
+                }
                 teamsElement.Add(TeamList.Select(el => new XElement("teamItem", new XElement("Name", el.Name), new XElement("Score", el.Score))));
 
                 var wordsElement = xdoc.Element("settings").Element("Words");
-                wordsElement.RemoveAll();
+
+                if(wordsElement != null)
+                {
+                    wordsElement.RemoveAll();
+
+                }
+                else
+                {
+                    xdoc.Root.Add(new XElement("Words"));
+                    wordsElement = xdoc.Element("settings").Element("Words");
+
+                }
                 wordsElement.Add(WordList.Select(el => new XElement("wordItem", new XElement("Name", el.Name))));
 
                 var timerElement = xdoc.Element("settings").Element("Timer");
-                timerElement.RemoveAll();
+
+                if(timerElement != null)
+                {
+                    timerElement.RemoveAll();
+
+                } else
+                {
+                    xdoc.Root.Add(new XElement("Timer"));
+                    timerElement = xdoc.Element("settings").Element("Timer");
+                }
                 timerElement.Add(new XElement("Secundes", Secundes), new XElement("Minutes", Minutes));
 
                 //    xdoc.Root.Add(teamsElement);

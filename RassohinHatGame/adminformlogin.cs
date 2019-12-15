@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace AndreevaHatGame
+namespace RassohinHatGame
 {
     public partial class AdminForm : Form
     {

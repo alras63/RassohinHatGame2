@@ -1,4 +1,4 @@
-﻿namespace AndreevaHatGame
+﻿namespace RassohinHatGame
 {
     partial class AdminForm
     {

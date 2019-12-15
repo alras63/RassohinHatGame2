@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{798DEE26-362D-4DF3-9E22-6DC961F9ECAA}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>AndreevaHatGame</RootNamespace>
-    <AssemblyName>AndreevaHatGame</AssemblyName>
+    <RootNamespace>RassohinHatGame</RootNamespace>
+    <AssemblyName>RassohinHatGame</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

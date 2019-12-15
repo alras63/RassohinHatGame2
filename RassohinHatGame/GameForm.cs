@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
 
-namespace AndreevaHatGame
+namespace RassohinHatGame
 {
     struct Timer
     {

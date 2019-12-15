@@ -1,4 +1,4 @@
-﻿namespace AndreevaHatGame
+﻿namespace RassohinHatGame
 {
     partial class Form1
     {
@@ -82,7 +82,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImage = global::AndreevaHatGame.Properties.Resources.Cowboy_cap_0;
+            this.pictureBox1.BackgroundImage = global::RassohinHatGame.Properties.Resources.Cowboy_cap_0;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.Location = new System.Drawing.Point(203, 111);
             this.pictureBox1.Name = "pictureBox1";

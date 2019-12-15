@@ -4,16 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AndreevaHatGame
+namespace RassohinHatGame
 {
-    [Serializable]
-    public class Team
+    public class Word
     {
-
-
         public string Name { get; set; }
-        public int Score { get; set; }
-
-
     }
 }
